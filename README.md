@@ -2,6 +2,24 @@
 
 멘사 테스트 공지가 올라왔는지 확인하고, 새로운 테스트가 생겼을 경우 지메일로 알려주는 프로젝트
 
+## How to use
+
+### start setting
+
+```bash
+$ git clone https://github.com/Kredsya/mensa-notify.git
+$ crontab -e
+```
+and add a line `0 9 * * * python3 /<repository path>/mensa-notify.py` (run python at 9 a.m. everyday). If you want to custum the time, refer to the result of `crontab -h`.
+
+### stop
+
+```bash
+$ crontab -r
+```
+
+or delete a line when you started.
+
 ## 개발 동기
 
 오랜만에 [멘사](https://www.mensakorea.org/)에서 테스트를 재개하였다.
