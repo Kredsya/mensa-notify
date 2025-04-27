@@ -1,6 +1,6 @@
 # mensa-notify
 
-멘사 테스트 공지가 올라왔는지 확인하고, 새로운 테스트가 생겼을 경우 지메일로 알려주는 프로젝트
+멘사 테스트 공지가 올라왔는지 확인하고, 새로운 테스트가 생겼을 경우 디스코드 웹훅으로 알려주는 프로그램
 
 ## How to use
 
@@ -10,7 +10,7 @@
 $ git clone https://github.com/Kredsya/mensa-notify.git
 $ crontab -e
 ```
-and add a line `0 9 * * * python3 /<repository path>/mensa-notify.py` (run python at 9 a.m. everyday). If you want to custum the time, refer to the result of `crontab -h`.
+and add a line `0 9 * * * python3 /path/to/mensa-notify.py` (run python at 9 a.m. everyday). If you want to custum the time, refer to the result of `crontab -h`.
 
 ### stop
 
@@ -32,13 +32,7 @@ or delete a line when you started.
 
 리눅스의 crontab으로 하루에 한 번 `python3 mensa-notify.py`를 실행한다.
 
-만약 내가 원하는 [테스트 공지](https://www.mensakorea.org/bbs/board.php?bo_table=test)(지금 원하는건 24년 3월)가 올라오면 지메일로 해당 사실을 보낸다.
-
-## 참고자료
-
-[crontab 네이버 블로그](https://m.blog.naver.com/shino1025/221432633410)
-
-[Gmail API](https://developers.google.com/gmail/api/guides?hl=ko)
+만약 내가 원하는 [테스트 공지](https://www.mensakorea.org/bbs/board.php?bo_table=test)(지금 원하는건 25년 5월)가 올라오면 디스코드 웹훅으로 해당 사실을 보낸다.
 
 ## License
 
